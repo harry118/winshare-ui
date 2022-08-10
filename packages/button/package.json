@@ -1,0 +1,29 @@
+{
+  "name": "@winshare/button",
+  "version": "0.0.1",
+  "description": "按钮",
+  "keywords": [
+    "button",
+    "winshare"
+  ],
+  "author": "junxuan.gxw <junxuan.gxw@dtyunxi.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/button.js",
+  "module": "es/index.js",
+  "typings": "es/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "es"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@winshare/button.test.js"
+  }
+}

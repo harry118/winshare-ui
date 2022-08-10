@@ -1,0 +1,12 @@
+{
+  "npmClient": "yarn",
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "useNx": true,
+  "useWorkspaces": true,
+  "version": "independent",
+  "command": {
+    "publish": {
+      "registry": "https://registry.npmjs.org/"
+    }
+  }
+}
