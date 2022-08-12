@@ -2,16 +2,25 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
+    "allowJs": true,
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "jsx": "react",
     "esModuleInterop": true,
+    "experimentalDecorators": true,
     "types": ["jest"],
     "strict": true,
     "skipLibCheck": true,
     "declaration": true,
     "paths": {
       "@winshare/tag": ["./packages/tag/src/index.tsx"],
-      "@winshare/button": ["./packages/button/src/index.tsx"]
+      "@winshare/button": ["./packages/button/src/index.tsx"],
+      "@/": ["./packages"]
     }
-  }
+  },
+  "include": [
+    "typings.d.ts", //配置的.d.ts文件
+    "docs/guide"
+  ],
+  "exclude": ["node_modules", "lib"]
 }
