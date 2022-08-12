@@ -31,7 +31,7 @@
   },
   "scripts": {
     "test": "node ./__tests__/@winshare/button.test.js",
-    "build": "vite build"
+    "build": "echo 1111"
   },
   "bugs": {
     "url": "https://github.com/harry118/winshare-ui/issues"
@@ -44,5 +44,5 @@
     "@vitejs/plugin-react": "^2.0.1",
     "@vitejs/plugin-react-refresh": "^1.3.6"
   },
-  "gitHead": "3090373c112b3de25a80b21b71064936df03768d"
+  "gitHead": "a3c3564a052c6da43e79a019f21808915daf521a"
 }
