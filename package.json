@@ -12,7 +12,7 @@
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
-    "prepublishOnly": "lerna run build",
+    "prepublishOnly": "lerna exec build",
     "publish": "lerna version --conventional-commits && lerna publish from-package --conventional-commits",
     "release:force": "lerna publish from-package --yes"
   },
