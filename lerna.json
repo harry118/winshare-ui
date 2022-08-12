@@ -6,7 +6,9 @@
   "version": "independent",
   "command": {
     "publish": {
-      "registry": "https://registry.npmjs.org/"
+      "ignoreChanges": ["ignored-file", "*.md"],
+      "message": "chore(release): publish",
+      "registry": "https://registry.npmjs.org"
     }
   }
 }

@@ -1,11 +1,11 @@
-# `@winshare/Input`
+# `@winshare/tag`
 
 > TODO: description
 
 ## Usage
 
 ```
-const input = require('@winshare/Input');
+const tag = require('@winshare/tag');
 
 // TODO: DEMONSTRATE API
 ```

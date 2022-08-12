@@ -8,6 +8,10 @@
     "types": ["jest"],
     "strict": true,
     "skipLibCheck": true,
-    "declaration": true
+    "declaration": true,
+    "paths": {
+      "@winshare/tag": ["./packages/tag/src/index.tsx"],
+      "@winshare/button": ["./packages/button/src/index.tsx"]
+    }
   }
 }

@@ -2,6 +2,9 @@
   "private": true,
   "name": "winshare-ui",
   "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -11,7 +14,8 @@
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "release:force": "lerna publish from-package --yes"
   },
   "files": [
     "dist"
@@ -45,8 +49,5 @@
     "lint-staged": "^10.0.7",
     "prettier": "^2.2.1",
     "yorkie": "^2.0.0"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+  }
 }
