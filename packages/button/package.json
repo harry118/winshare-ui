@@ -31,7 +31,7 @@
   },
   "scripts": {
     "test": "node ./__tests__/@winshare/button.test.js",
-    "build": "echo 1111"
+    "build": "vite build"
   },
   "bugs": {
     "url": "https://github.com/harry118/winshare-ui/issues"
