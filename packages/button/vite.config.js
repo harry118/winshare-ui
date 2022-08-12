@@ -11,7 +11,8 @@ export default defineConfig({
       name: '@winshare/button',
       // the proper extensions will be added
       //   fileName: '@winshare/button',
-      fileName: (format) => `@winshare/button.${format}.js`,
+      formats: '',
+      // fileName: (format) => `@winshare/button.${format}.js`,
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖

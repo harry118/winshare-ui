@@ -5,12 +5,12 @@
   "keywords": [],
   "author": "junxuan.gxw <junxuan.gxw@dtyunxi.com>",
   "license": "ISC",
-  "main": "./dist/@winshare/button.umd.js",
-  "module": "./dist/@winshare/button.es.js",
+  "main": "./dist/button.umd.js",
+  "module": "./dist/button.es.js",
   "exports": {
     ".": {
-      "import": "./dist/@winshare/button.es.js",
-      "require": "./dist/@winshare/button.umd.js"
+      "import": "./dist/button.es.js",
+      "require": "./dist/button.umd.js"
     }
   },
   "directories": {
