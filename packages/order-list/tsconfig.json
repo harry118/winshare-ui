@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.build.json",
+  "include": ["./src"],
+  "exclude": ["lib"],
+
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "lib",
+    "declarationDir": "lib/types",
+    "paths": {
+      "@winshare/tag": ["./packages/tag/src/index.tsx"],
+      "@winshare/button": ["./packages/button/src/index.tsx"],
+      "@winshare/order-list": ["./packages/order-list/src/index.tsx"],
+      "@/": ["./packages"]
+    }
+  }
+}

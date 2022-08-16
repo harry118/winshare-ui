@@ -11,19 +11,27 @@ export default defineConfig({
       name: '@winshare/button',
       // the proper extensions will be added
       //   fileName: '@winshare/button',
-      formats: '',
+      formats: ['es', 'umd'],
       // fileName: (format) => `@winshare/button.${format}.js`,
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
-      external: ['react'],
+      external: ['react', 'react-dom', 'antd'],
       output: {
         // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
         globals: {
           react: 'React',
+          'react-dom': 'ReactDOM',
         },
       },
     },
-    outDir: 'lib/dist',
+    outDir: 'lib',
+  },
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+      },
+    },
   },
 });
