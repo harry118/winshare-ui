@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.5](https://github.com/harry118/winshare-ui/compare/@winshare/button@1.1.4...@winshare/button@1.1.5) (2022-08-16)
+
+**Note:** Version bump only for package @winshare/button
+
 ## [1.1.3](https://github.com/harry118/winshare-ui/compare/@winshare/button@1.1.1...@winshare/button@1.1.3) (2022-08-12)
 
 **Note:** Version bump only for package @winshare/button
