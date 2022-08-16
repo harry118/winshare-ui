@@ -7,14 +7,13 @@ import dts from 'vite-plugin-dts';
 export default defineConfig({
   plugins: [
     react(),
-    // dts({
-    //   root: '.',
-    //   outputDir: 'lib/',
-    //   insertTypesEntry: true,
-    //   tsConfigFilePath: './tsconfig.json',
-    // }),
+    dts({
+      insertTypesEntry: true,
+      tsConfigFilePath: './tsconfig.json',
+    }),
   ],
   build: {
+    // sourcemap: true,
     lib: {
       entry: resolve(__dirname, 'src/index.tsx'),
       name: '@winshare/order-list',
@@ -34,7 +33,7 @@ export default defineConfig({
         },
       },
     },
-    outDir: 'lib',
+    outDir: 'dist',
   },
   css: {
     preprocessorOptions: {

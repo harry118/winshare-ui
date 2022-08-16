@@ -12,7 +12,8 @@ export interface OrderListProps {
 export const OrderList: FC<OrderListProps> = ({ detailUrl }) => {
   return (
     <Fragment>
-      <div>我是订单列表页面</div>
+      <div>我是订单列表页面 2222</div>
+      <p>第二版本增加的东西</p>
       <em>跳转的详情地址:{detailUrl}</em>
     </Fragment>
   );

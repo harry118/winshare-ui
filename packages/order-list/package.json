@@ -10,15 +10,22 @@
   "author": "junxuan.gxw <junxuan.gxw@dtyunxi.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/index.js",
-  "module":"es/index.js",
+  "main": "./dist/order-list.umd.cjs",
+  "module": "dist/order-list.js",
+  "exports": {
+    ".": {
+      "import": "./dist/order-list.js",
+      "require": "./dist/order-list.umd.cjs"
+    }
+  },
   "type": "module",
-  "types": "lib/types/src/index.d.ts",
+  "types": "./dist/packages/order-list/src",
   "directories": {
-    "lib": "lib",
+    "dist": "dist",
     "test": "__tests__"
   },
   "files": [
+    "dist",
     "lib",
     "es"
   ],
@@ -31,9 +38,14 @@
   },
   "scripts": {
     "test": "node ./__tests__/@winshare/order-list.test.js",
-    "build": "tsc && vite build"
+    "clean":"rm -rf dist types",
+    "build": "npm run clean && tsc && vite build"
   },
   "devDependencies": {
     "vite-plugin-dts": "^1.4.1"
+  },
+  "peerDependencies": {
+    "react": "16.8.0 || 17.x || 18.x",
+    "react-dom": "16.8.0 || 17.x || 18.x"
   }
 }

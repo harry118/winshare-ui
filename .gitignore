@@ -4,6 +4,8 @@
 /node_modules
 /**/node_modules
 /**/lib/
+/**/dist/
+/**/types/
 /npm-debug.log*
 /yarn-error.log
 /yarn.lock
