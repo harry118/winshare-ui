@@ -1,5 +1,5 @@
 // vite.config.js
-import { resolve } from 'path';
+import path, { resolve } from 'path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
@@ -41,5 +41,17 @@ export default defineConfig({
         javascriptEnabled: true,
       },
     },
+  },
+  resolve: {
+    alias: [
+      {
+        find: /^~/,
+        replacement: '',
+      },
+      {
+        find: '@',
+        replacement: path.resolve(__dirname, './src'),
+      },
+    ],
   },
 });

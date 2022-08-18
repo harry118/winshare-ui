@@ -21,9 +21,18 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 export default defineConfig({
   title: 'winshare-ui',
-  favicon:
-    'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
+  favicon: '/assets/logo.png',
   logo: '/assets/logo.png',
+  extraBabelPlugins: [
+    [
+      'import',
+      {
+        libraryName: 'antd',
+        libraryDirectory: 'es',
+        style: true,
+      },
+    ],
+  ],
   outputPath: 'docs-dist',
   mode: 'site',
   resolve: {
@@ -37,15 +46,15 @@ export default defineConfig({
     'en-US': [
       null,
       {
-        title: 'GitHub',
-        path: 'https://github.com/ant-design/pro-components',
+        title: 'Gitlab',
+        path: 'http://idp-gitlab.winshare.com.cn/operation-winshare/winshare-ui',
       },
     ],
     'zh-CN': [
       null,
       {
-        title: 'GitHub',
-        path: 'https://github.com/ant-design/pro-components',
+        title: 'Gitlab',
+        path: 'http://idp-gitlab.winshare.com.cn/operation-winshare/winshare-ui',
       },
     ],
   },

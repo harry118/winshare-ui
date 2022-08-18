@@ -1,29 +1,37 @@
 ---
 title: 快速开始
-order: 2
+order: 1
 group:
   path: /
 nav:
   title: 文档
   path: /docs
+  order: 1
 ---
 
 ## WinshareUI
 
 WinshareUI 的描述
 
-## dumi 笔记
+## 安装
 
+winshare-ui 中 每一个组件都是一个独立的包，你需要在你的项目中安装对应的 npm 包并使用. 例如
+
+```shell
+$ npm install @winshare/order-list -f --registry http://10.100.9.201:18081/repository/winshare-npm
 ```
----
-title: 自定义页面名称
-nav:
-  path: /自定义导航路由
-  title: 自定义导航名称
-  order: 控制导航顺序，数字越小越靠前，默认以路径长度和字典序排序
-group:
-  path: /自定义分组路由，注意，分组路由 = 导航路由 + 自己
-  title: 自定义分组名称
-  order: 控制分组顺序，数字越小越靠前，默认以路径长度和字典序排序
----
+
+> 你可以在项目中的.npmrc 文件中设置 registry=http://10.100.9.201:18081/repository/winshare-npm 来统一 npm 的安装源
+
+## 在项目中使用
+
+每一个包都是一个独立的组件包，使用示例如下:
+
+```tsx
+import React from 'react';
+import OrderList from '@winshare/order-list';
+
+export default () => {
+  return <OrderList detailUrl={'http://www.baidu.com'} />;
+};
 ```
