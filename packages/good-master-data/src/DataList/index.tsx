@@ -3,12 +3,11 @@ import { RightOutlined, LeftOutlined, CaretLeftFilled, CaretUpFilled } from '@an
 import { Table, Col, Divider } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
 import { Link } from 'umi';
-import IconFont from '@/components/IconFont';
-import { PlainObject } from '@/types';
+import IconFont from '../components/IconFont';
 import { dataList } from './constants';
 import styles from './index.less';
 
-const defaultColumns: ColumnsType<PlainObject> = [
+const defaultColumns: ColumnsType<any> = [
   {
     title: '#',
     dataIndex: 'key',

@@ -11,7 +11,7 @@ group:
 
 ## 代码演示
 
-<code src="./index.tsx"></code>
+<code src="./demo/demo.tsx"></code>
 
 <!-- ```tsx
 import React from 'react';
@@ -24,4 +24,4 @@ export default () => {
 
 <!-- <code src="./demos/type.tsx"  title="按钮类型"  /> -->
 
-<API src="./index.tsx"></API>
+<API src="./demo/demo.tsx"></API>
