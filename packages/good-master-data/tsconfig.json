@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.build.json",
+  "include": ["src"],
+  "exclude": ["lib", "node_modules"],
+  "compileOnSave": true,
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "dist",
+    "declarationDir": "types",
+    "paths": {
+      "@winshare/button": ["./packages/button/src/index.tsx"],
+      "@winshare/order-list": ["./packages/order-list/src/index.tsx"],
+      "@winshare/good-master-data": ["./packages/good-master-data/src/index.tsx"],
+      "@/": ["./packages"]
+    }
+  }
+}

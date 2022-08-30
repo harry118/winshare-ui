@@ -1,0 +1,64 @@
+{
+  "name": "@winshare/good-master-data",
+  "version": "0.1.0",
+  "description": "商品主数据",
+  "keywords": [
+    "order",
+    "winshare",
+    "component"
+  ],
+  "author": "junxuan.gxw <junxuan.gxw@dtyunxi.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "./dist/good-master-data.umd.cjs",
+  "module": "dist/good-master-data.js",
+  "exports": {
+    ".": {
+      "import": "./dist/good-master-data.js",
+      "require": "./dist/good-master-data.umd.cjs"
+    }
+  },
+  "type": "module",
+  "types": "./dist/packages/good-master-data/src",
+  "directories": {
+    "dist": "dist",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://idp-gitlab.winshare.com.cn/operation-winshare/winshare-ui.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@winshare/good-master-data.test.js",
+    "clean": "rm -rf dist types",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@ant-design/pro-components": "^1.1.16",
+    "@vitejs/plugin-react": "^2.0.1",
+    "@vitejs/plugin-react-refresh": "^1.3.6",
+    "esbuild": "^0.15.3",
+    "less": "^4.1.3",
+    "less-loader": "^11.0.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.7.4",
+    "umi-request": "^1.4.0",
+    "vite": "^3.0.7",
+    "vite-plugin-dts": "^1.4.1"
+  },
+  "peerDependencies": {
+    "@ant-design/pro-components": "*",
+    "react": "16.8.0 || 17.x || 18.x",
+    "react-dom": "16.8.0 || 17.x || 18.x",
+    "umi-request": "*"
+  },
+  "gitHead": "c78463926337dfee244f03c4d2367fad25a9ab30"
+}

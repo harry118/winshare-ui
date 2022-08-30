@@ -1,0 +1,31 @@
+.title {
+  color: #000000;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.container {
+  padding: 16px 0;
+  border-bottom: 1px solid#E8E8E8;
+  .searchInput {
+    font-size: 14px;
+    border-radius: 8px;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    > span {
+      color: #999;
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
+  :global {
+    .ant-form-item-label {
+      min-width: 110px;
+    }
+  }
+}
