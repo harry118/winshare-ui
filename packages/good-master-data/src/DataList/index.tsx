@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { RightOutlined, LeftOutlined, CaretLeftFilled, CaretUpFilled } from '@ant-design/icons';
 import { Table, Col, Divider } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
-import { history } from 'umi';
+import { Link } from 'umi';
 import IconFont from '../components/IconFont';
 import { dataList } from './constants';
 import styles from './index.less';
@@ -19,9 +19,7 @@ const defaultColumns: ColumnsType<any> = [
   {
     title: 'SAP商品编码',
     dataIndex: 'sapGoodCode',
-    render: (text) => (
-      <a onClick={() => history.push('/masterData/goodMasterData/detail')}>{text}</a>
-    ),
+    render: (text) => <Link to="/masterData/goodMasterData/detail">{text}</Link>,
   },
   {
     title: '商品全名',
@@ -101,9 +99,7 @@ const SearchBox: React.FC = () => {
           title: '操作',
           dataIndex: 'action',
           fixed: 'right',
-          render: (_, record) => (
-            <a onClick={() => history.push('/masterData/goodMasterData/edit?id=1')}>编辑</a>
-          ),
+          render: (_, record) => <Link to="/masterData/goodMasterData/edit?id=1">编辑</Link>,
         },
       ]);
       setColumns(newColumns);
@@ -126,10 +122,10 @@ const SearchBox: React.FC = () => {
       {allExpand && (
         <>
           <div className={styles.menuBox}>
-            <a onClick={() => history.push('/masterData/goodMasterData/add')}>
+            <Link to="/masterData/goodMasterData/add">
               <IconFont type="icon_chuangjian" className={styles.innerIcon} />
               <span>创建</span>
-            </a>
+            </Link>
             <span>
               <IconFont type="icon_mobanxiazai1" className={styles.innerIcon} />
               <span>模版下载</span>
