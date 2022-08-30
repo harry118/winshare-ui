@@ -16,7 +16,7 @@ export default defineConfig({
     // sourcemap: true,
     lib: {
       entry: resolve(__dirname, 'src/index.tsx'),
-      name: '@winshare/order-list',
+      name: '@winshare/good-master-data',
       // the proper extensions will be added
       //   fileName: '@winshare/button',
       formats: ['es', 'umd'],
@@ -51,6 +51,10 @@ export default defineConfig({
       {
         find: '@',
         replacement: path.resolve(__dirname, './src'),
+      },
+      {
+        find: '@@',
+        replacement: path.resolve(__dirname, './src/.umi'),
       },
     ],
   },
