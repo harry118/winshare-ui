@@ -2,82 +2,84 @@ import React, { useState } from 'react';
 import { RightOutlined, LeftOutlined, CaretLeftFilled, CaretUpFilled } from '@ant-design/icons';
 import { Table, Col, Divider } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
-import { Link } from 'umi';
+import { useHistory } from 'react-router-dom';
 import IconFont from '../components/IconFont';
 import { dataList } from './constants';
 import styles from './index.less';
 
-const defaultColumns: ColumnsType<any> = [
-  {
-    title: '#',
-    dataIndex: 'key',
-  },
-  {
-    title: '公司代码',
-    dataIndex: 'code',
-  },
-  {
-    title: 'SAP商品编码',
-    dataIndex: 'sapGoodCode',
-    render: (text) => <Link to="/masterData/goodMasterData/detail">{text}</Link>,
-  },
-  {
-    title: '商品全名',
-    dataIndex: 'goodName',
-  },
-  {
-    title: '国际商品编号',
-    dataIndex: 'godeCode',
-  },
-  {
-    title: '定价',
-    dataIndex: 'price',
-  },
-  {
-    title: '商品类型',
-    dataIndex: 'type',
-  },
-  {
-    title: '商品类目',
-    dataIndex: 'goodCategory',
-  },
-  {
-    title: '管理分类',
-    dataIndex: 'manageCategory',
-  },
-  {
-    title: '管理分类',
-    dataIndex: 'manageCategory',
-  },
-  {
-    title: '管理分类',
-    dataIndex: 'manageCategory',
-  },
-  {
-    title: '管理分类',
-    dataIndex: 'manageCategory',
-  },
-  {
-    title: '管理分类',
-    dataIndex: 'manageCategory',
-  },
-  {
-    title: '管理分类',
-    dataIndex: 'manageCategory',
-  },
-  {
-    title: '管理分类',
-    dataIndex: 'manageCategory',
-  },
-  {
-    title: '管理分类',
-    dataIndex: 'manageCategory',
-  },
-];
-
 const SearchBox: React.FC = () => {
   const [allExpand, setAllExpand] = useState(true);
   const [showMore, setShowMore] = useState(false);
+  const history = useHistory();
+  const defaultColumns: ColumnsType<any> = [
+    {
+      title: '#',
+      dataIndex: 'key',
+    },
+    {
+      title: '公司代码',
+      dataIndex: 'code',
+    },
+    {
+      title: 'SAP商品编码',
+      dataIndex: 'sapGoodCode',
+      render: (text) => (
+        <a onClick={() => history.push('/masterData/goodMasterData/detail')}>{text}</a>
+      ),
+    },
+    {
+      title: '商品全名',
+      dataIndex: 'goodName',
+    },
+    {
+      title: '国际商品编号',
+      dataIndex: 'godeCode',
+    },
+    {
+      title: '定价',
+      dataIndex: 'price',
+    },
+    {
+      title: '商品类型',
+      dataIndex: 'type',
+    },
+    {
+      title: '商品类目',
+      dataIndex: 'goodCategory',
+    },
+    {
+      title: '管理分类',
+      dataIndex: 'manageCategory',
+    },
+    {
+      title: '管理分类',
+      dataIndex: 'manageCategory',
+    },
+    {
+      title: '管理分类',
+      dataIndex: 'manageCategory',
+    },
+    {
+      title: '管理分类',
+      dataIndex: 'manageCategory',
+    },
+    {
+      title: '管理分类',
+      dataIndex: 'manageCategory',
+    },
+    {
+      title: '管理分类',
+      dataIndex: 'manageCategory',
+    },
+    {
+      title: '管理分类',
+      dataIndex: 'manageCategory',
+    },
+    {
+      title: '管理分类',
+      dataIndex: 'manageCategory',
+    },
+  ];
   const [columns, setColumns] = useState(defaultColumns);
   const data = dataList.map((item, index) => ({ ...item, key: index + 1 }));
   const handleShowMore = () => {
@@ -99,7 +101,7 @@ const SearchBox: React.FC = () => {
           title: '操作',
           dataIndex: 'action',
           fixed: 'right',
-          render: (_, record) => <Link to="/masterData/goodMasterData/edit?id=1">编辑</Link>,
+          render: (_, record) => <span>编辑</span>,
         },
       ]);
       setColumns(newColumns);
@@ -122,10 +124,10 @@ const SearchBox: React.FC = () => {
       {allExpand && (
         <>
           <div className={styles.menuBox}>
-            <Link to="/masterData/goodMasterData/add">
+            <span>
               <IconFont type="icon_chuangjian" className={styles.innerIcon} />
               <span>创建</span>
-            </Link>
+            </span>
             <span>
               <IconFont type="icon_mobanxiazai1" className={styles.innerIcon} />
               <span>模版下载</span>
