@@ -4,7 +4,7 @@ import { Button, Col, Form, Input, Row, Select } from 'antd';
 import { searchList } from './constants';
 
 const { Option } = Select;
-import styles from './index.less';
+import styles from './index.module.less';
 
 const SearchBox: React.FC = () => {
   const [expand, setExpand] = useState(false);

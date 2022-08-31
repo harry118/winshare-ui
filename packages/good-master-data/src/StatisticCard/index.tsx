@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Row, Statistic } from 'antd';
 import classNames from 'classnames';
-import styles from './index.less';
+import styles from './index.module.less';
 
 const StatisticCard: React.FC = () => {
   const textColor = '#333';

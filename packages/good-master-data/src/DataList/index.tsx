@@ -5,7 +5,7 @@ import type { ColumnsType } from 'antd/es/table';
 import { useHistory } from 'react-router-dom';
 import IconFont from '../components/IconFont';
 import { dataList } from './constants';
-import styles from './index.less';
+import styles from './index.module.less';
 
 const SearchBox: React.FC = () => {
   const [allExpand, setAllExpand] = useState(true);
