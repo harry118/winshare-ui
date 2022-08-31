@@ -1,6 +1,6 @@
 {
   "name": "@winshare/good-master-data",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "商品主数据",
   "keywords": [
     "order",
@@ -68,4 +68,3 @@
   },
   "gitHead": "c78463926337dfee244f03c4d2367fad25a9ab30"
 }
-

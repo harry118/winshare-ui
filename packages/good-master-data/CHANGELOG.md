@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](http://idp-gitlab.winshare.com.cn/operation-winshare/winshare-ui/compare/@winshare/good-master-data@0.4.0...@winshare/good-master-data@0.5.0) (2022-08-31)
+
+### Features
+
+- 打包添加 css 配置 ([69329b3](http://idp-gitlab.winshare.com.cn/operation-winshare/winshare-ui/commit/69329b33ffbcb696731810659b54e121ce653dc7))
+
 # [0.4.0](http://idp-gitlab.winshare.com.cn/operation-winshare/winshare-ui/compare/@winshare/good-master-data@0.3.0...@winshare/good-master-data@0.4.0) (2022-08-31)
 
 ### Features
