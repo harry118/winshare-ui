@@ -68,7 +68,7 @@ const columns: ProColumns<GithubIssueItem>[] = [
       rules: [
         {
           required: true,
-          message: '此项为必填项',
+          message: '此项为必填项*',
         },
       ],
     },
