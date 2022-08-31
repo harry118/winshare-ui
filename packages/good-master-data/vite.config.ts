@@ -3,10 +3,12 @@ import path, { resolve } from 'path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
+import libCss from 'vite-plugin-libcss';
 
 export default defineConfig({
   plugins: [
     react(),
+    libCss(),
     dts({
       insertTypesEntry: true,
       tsConfigFilePath: './tsconfig.json',
