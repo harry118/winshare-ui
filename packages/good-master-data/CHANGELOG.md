@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](http://idp-gitlab.winshare.com.cn/operation-winshare/winshare-ui/compare/@winshare/good-master-data@0.5.2...@winshare/good-master-data@0.6.0) (2022-09-05)
+
+### Features
+
+- 不使用 umi 打包 ([5111950](http://idp-gitlab.winshare.com.cn/operation-winshare/winshare-ui/commit/511195087fac1b9b671ef5ba2585a1c69ef75f2d))
+- 删除 umi 配置 ([3e8b89e](http://idp-gitlab.winshare.com.cn/operation-winshare/winshare-ui/commit/3e8b89e10e9756629895852eb93bc3b14b72eba9))
+
 ## [0.5.2](http://idp-gitlab.winshare.com.cn/operation-winshare/winshare-ui/compare/@winshare/good-master-data@0.5.1...@winshare/good-master-data@0.5.2) (2022-09-01)
 
 **Note:** Version bump only for package @winshare/good-master-data

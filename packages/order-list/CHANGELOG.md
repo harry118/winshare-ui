@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.11](http://idp-gitlab.winshare.com.cn/operation-winshare/winshare-ui/compare/@winshare/order-list@0.1.10...@winshare/order-list@0.1.11) (2022-09-05)
+
+**Note:** Version bump only for package @winshare/order-list
+
 ## [0.1.10](http://idp-gitlab.winshare.com.cn/operation-winshare/winshare-ui/compare/@winshare/order-list@0.1.9...@winshare/order-list@0.1.10) (2022-09-01)
 
 **Note:** Version bump only for package @winshare/order-list
