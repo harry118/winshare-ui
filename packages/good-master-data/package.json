@@ -1,6 +1,6 @@
 {
   "name": "@winshare/good-master-data",
-  "version": "0.5.0",
+  "version": "0.5.2",
   "description": "商品主数据",
   "keywords": [
     "order",
@@ -39,7 +39,7 @@
   "scripts": {
     "test": "node ./__tests__/@winshare/good-master-data.test.js",
     "clean": "rm -rf dist types",
-    "build": "tsc && vite build",
+    "build": "tsc && umi build && vite build",
     "start": "cross-env UMI_ENV=dev umi dev"
   },
   "devDependencies": {
@@ -65,5 +65,5 @@
     "react-dom": "16.8.0 || 17.x || 18.x",
     "umi-request": "*"
   },
-  "gitHead": "c78463926337dfee244f03c4d2367fad25a9ab30"
+  "gitHead": "e7cc43f99d771dae714077ec3fb313241607ad0d"
 }

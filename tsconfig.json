@@ -17,8 +17,8 @@
       "@winshare/button": ["./packages/button/src/index.tsx"],
       "@winshare/order-list": ["./packages/order-list/src/index.tsx"],
       "@winshare/good-master-data": ["./packages/good-master-data/src/index.tsx"],
-      "@/": ["./packages"],
-      "@@/*": ["./packages/*/src/.umi/*"]
+      "@/": ["./packages"]
+      // "@@/*": ["./packages/*/src/.umi/*"]
     }
   },
   "include": [
