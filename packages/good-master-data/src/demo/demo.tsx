@@ -1,8 +1,7 @@
 import React from 'react';
-// import GoodMasterData from '@winshare/good-master-data';
+import GoodMasterData from '@winshare/good-master-data';
 
 const Demo: React.FC = () => {
-  // return <GoodMasterData />;
-  return null;
+  return <GoodMasterData />;
 };
 export default Demo;

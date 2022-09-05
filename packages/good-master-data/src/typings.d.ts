@@ -13,3 +13,4 @@ declare module '*.module.less' {
 declare module 'lodash';
 declare module 'crypto-js';
 declare module 'enzyme-adapter-react-16';
+declare module '@winshare/good-master-data';
