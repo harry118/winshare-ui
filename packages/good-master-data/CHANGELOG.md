@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](http://idp-gitlab.winshare.com.cn/operation-winshare/winshare-ui/compare/@winshare/good-master-data@0.10.0...@winshare/good-master-data@0.11.0) (2022-09-07)
+
+### Features
+
+- 测试组件通信 ([6c8a84f](http://idp-gitlab.winshare.com.cn/operation-winshare/winshare-ui/commit/6c8a84fa6a4cecaf036e4ebbbc2c8b17134c6116))
+
 # [0.10.0](http://idp-gitlab.winshare.com.cn/operation-winshare/winshare-ui/compare/@winshare/good-master-data@0.9.0...@winshare/good-master-data@0.10.0) (2022-09-07)
 
 ### Features
