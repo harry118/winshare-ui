@@ -3,6 +3,7 @@ import { RightOutlined, LeftOutlined, CaretLeftFilled, CaretUpFilled } from '@an
 import { Table, Col, Divider } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
 import { useHistory } from 'react-router-dom';
+// import { History } from 'umi';
 import IconFont from '../components/IconFont';
 import { dataList } from './constants';
 import styles from './index.module.less';
