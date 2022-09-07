@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](http://idp-gitlab.winshare.com.cn/operation-winshare/winshare-ui/compare/@winshare/good-master-data@0.7.0...@winshare/good-master-data@0.8.0) (2022-09-07)
+
+### Features
+
+- add config ([68889b6](http://idp-gitlab.winshare.com.cn/operation-winshare/winshare-ui/commit/68889b6573c3a701c110d21f94fb6c78b5428bd2))
+
 # 0.7.0 (2022-09-07)
 
 ### Features
