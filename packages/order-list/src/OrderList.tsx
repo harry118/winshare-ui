@@ -63,12 +63,12 @@ const columns: ProColumns<GithubIssueItem>[] = [
     dataIndex: 'title',
     copyable: true,
     ellipsis: true,
-    tip: '标题过长会自动收缩',
+    tip: '标题过长会自动收缩**',
     formItemProps: {
       rules: [
         {
           required: true,
-          message: '此项为必填项',
+          message: '此项为必填项**',
         },
       ],
     },

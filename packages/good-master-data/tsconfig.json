@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.build.json",
+  "include": ["src"],
+  "exclude": ["lib", "node_modules"],
+  "compileOnSave": true,
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "dist",
+    "declarationDir": "types",
+    "paths": {
+      "@winshare/good-master-data": ["./packages/good-master-data/src/index.tsx"],
+      "@/": ["./packages"]
+    }
+  }
+}
