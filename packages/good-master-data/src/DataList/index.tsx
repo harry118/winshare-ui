@@ -3,7 +3,7 @@ import { RightOutlined, LeftOutlined, CaretLeftFilled, CaretUpFilled } from '@an
 import { Table, Col, Divider } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
 import { useHistory } from 'react-router-dom';
-// import { History } from 'umi';
+import { useModel } from 'umi';
 import IconFont from '../components/IconFont';
 import { dataList } from './constants';
 import styles from './index.module.less';
@@ -12,6 +12,8 @@ const SearchBox: React.FC = () => {
   const [allExpand, setAllExpand] = useState(true);
   const [showMore, setShowMore] = useState(false);
   const history = useHistory();
+  const { initialState } = useModel('@@initialState');
+  console.log(initialState, 'initialState');
   const defaultColumns: ColumnsType<any> = [
     {
       title: '#',
