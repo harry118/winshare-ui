@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { RightOutlined, LeftOutlined, CaretLeftFilled, CaretUpFilled } from '@ant-design/icons';
 import { Table, Col, Divider } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
 import { useHistory } from 'react-router-dom';
-import { useModel } from 'umi';
+import { GoodsContext } from '@/models/goodMasterData';
 import IconFont from '../components/IconFont';
 import { dataList } from './constants';
 import styles from './index.module.less';
@@ -12,12 +12,8 @@ const SearchBox: React.FC = () => {
   const [allExpand, setAllExpand] = useState(true);
   const [showMore, setShowMore] = useState(false);
   const history = useHistory();
-  console.log(useModel, 'useModel');
-  const { menuList, updateState } = useModel('useMenuModel', ({ state, updateState }: any) => ({
-    menuList: state.menuList,
-    updateState: updateState,
-  }));
-  console.log(menuList, 'initialState');
+  const { data: data1 } = useContext(GoodsContext);
+  console.log(data1, 'data1');
   const defaultColumns: ColumnsType<any> = [
     {
       title: '#',
