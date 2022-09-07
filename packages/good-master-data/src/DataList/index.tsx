@@ -12,8 +12,8 @@ const SearchBox: React.FC = () => {
   const [allExpand, setAllExpand] = useState(true);
   const [showMore, setShowMore] = useState(false);
   const history = useHistory();
-  const { data: data1 } = useContext<any>(GoodsContext);
-  console.log(data1, 'data1');
+  const content = useContext<any>(GoodsContext);
+  console.log(content, 'content');
   const defaultColumns: ColumnsType<any> = [
     {
       title: '#',
