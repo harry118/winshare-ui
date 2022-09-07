@@ -12,11 +12,11 @@ const SearchBox: React.FC = () => {
   const [allExpand, setAllExpand] = useState(true);
   const [showMore, setShowMore] = useState(false);
   const history = useHistory();
+  console.log(useModel, 'useModel');
   const { menuList, updateState } = useModel('useMenuModel', ({ state, updateState }: any) => ({
     menuList: state.menuList,
     updateState: updateState,
   }));
-  console.log(useModel, 'useModel');
   console.log(menuList, 'initialState');
   const defaultColumns: ColumnsType<any> = [
     {
