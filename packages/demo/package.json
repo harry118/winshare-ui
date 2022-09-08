@@ -1,0 +1,54 @@
+{
+  "name": "@winshare/demo",
+  "version": "0.0.8",
+  "description": "winshare demo",
+  "keywords": [],
+  "license": "ISC",
+  "main": "./dist/demo.umd.js",
+  "module": "./dist/demo.js",
+  "type": "module",
+  "types": "./dist/packages/demo/src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/demo.js",
+      "require": "./dist/demo.umd.js"
+    }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__",
+    "dist": "dist"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harry118/winshare-ui.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@winshare/demo.test.js",
+    "build": "tsc && vite build"
+  },
+  "bugs": {
+    "url": "https://github.com/harry118/winshare-ui/issues"
+  },
+  "homepage": "https://github.com/harry118/winshare-ui#readme",
+  "dependencies": {
+    "@winshare/common-store": "^0.0.1",
+    "less": "^4.1.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^2.0.1",
+    "@vitejs/plugin-react-refresh": "^1.3.6",
+    "esbuild": "^0.15.3",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.7"
+  },
+  "gitHead": "e7cc43f99d771dae714077ec3fb313241607ad0d"
+}

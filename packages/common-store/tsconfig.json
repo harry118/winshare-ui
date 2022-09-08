@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.build.json",
+  "include": ["src", "src/typings.d.ts"],
+  "exclude": ["lib", "node_modules"],
+  "compileOnSave": true,
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "dist",
+    "jsx": "react",
+    "types": [],
+    "declarationDir": "types",
+    "paths": {
+      "@winshare/demo": ["./packages/demo/src/index.tsx"],
+      "@/": ["./packages"]
+    }
+  }
+}
