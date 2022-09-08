@@ -1,6 +1,6 @@
 {
   "extends": "../../tsconfig.build.json",
-  "include": ["src", "src/typings.d.ts"],
+  "include": ["src"],
   "exclude": ["lib", "node_modules"],
   "compileOnSave": true,
   "compilerOptions": {

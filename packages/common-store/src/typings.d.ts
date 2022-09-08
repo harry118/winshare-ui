@@ -17,3 +17,4 @@ declare module '@winshare/good-master-data';
 declare module 'umi';
 declare module '@/models/goodMasterData';
 declare module '.store';
+declare module 'react-dom/client';

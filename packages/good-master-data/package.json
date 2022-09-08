@@ -59,6 +59,7 @@
     "vite-plugin-libcss": "^1.0.5"
   },
   "peerDependencies": {
+    "@winshare/common-store": "^0.0.1",
     "@ant-design/pro-components": "*",
     "react": "16.8.0 || 17.x || 18.x",
     "react-dom": "16.8.0 || 17.x || 18.x",

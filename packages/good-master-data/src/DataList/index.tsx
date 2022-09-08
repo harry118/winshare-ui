@@ -3,7 +3,8 @@ import { RightOutlined, LeftOutlined, CaretLeftFilled, CaretUpFilled } from '@an
 import { Table, Col, Divider } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
 import { useHistory } from 'react-router-dom';
-import { GoodsContext } from '@/models/goodMasterData';
+// import { GoodsContext } from '@/models/goodMasterData';
+import { useCommon } from '@winshare/common-store';
 import IconFont from '../components/IconFont';
 import { dataList } from './constants';
 import styles from './index.module.less';
@@ -12,8 +13,10 @@ const SearchBox: React.FC = () => {
   const [allExpand, setAllExpand] = useState(true);
   const [showMore, setShowMore] = useState(false);
   const history = useHistory();
-  const content = useContext<any>(GoodsContext);
-  console.log(content, 'content');
+  const { common, dispatchCommon } = useCommon();
+  console.log('good-master-data中的 context common', common);
+  // const content = useContext<any>(GoodsContext);
+  // console.log(content, 'content');
   const defaultColumns: ColumnsType<any> = [
     {
       title: '#',

@@ -1,6 +1,6 @@
 {
   "name": "@winshare/demo",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "winshare demo",
   "keywords": [],
   "license": "ISC",
@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/harry118/winshare-ui#readme",
   "dependencies": {
-    "@winshare/common-store": "^0.0.1",
+    "@types/react-dom": "^18.0.6",
     "less": "^4.1.3"
   },
   "devDependencies": {
@@ -49,6 +49,9 @@
     "react-dom": "^18.2.0",
     "typescript": "^4.7.4",
     "vite": "^3.0.7"
+  },
+  "peerDependencies": {
+    "@winshare/common-store": "^0.0.1"
   },
   "gitHead": "e7cc43f99d771dae714077ec3fb313241607ad0d"
 }
